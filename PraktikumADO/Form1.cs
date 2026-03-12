@@ -38,6 +38,10 @@ namespace PraktikumADO
 
                 conn.Close(); // Tutup koneksi
             }
+            catch (Exception ex) // Tangkap dan tampilkan pesan error jika koneksi gagal
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
     }
 }
