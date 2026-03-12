@@ -66,5 +66,16 @@ namespace PraktikumADO
                 MessageBox.Show(ex.Message);
             }
         }
+
+        private void btnHitungMK_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                Koneksi(); // Panggil method koneksi
+                conn.Open(); // Buka koneksi
+
+
+            }
+        }
     }
 }
