@@ -112,5 +112,28 @@ namespace PraktikumADO
                 MessageBox.Show(ex.Message);
             }
         }
+
+        private void btnHitungDsn_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                Koneksi(); // Panggil method koneksi
+                conn.Open(); // Buka koneksi
+
+                string query = "SELECT COUNT(*) FROM Dosen"; // Query untuk menghitung jumlah mahasiswa
+
+                cmd = new SqlCommand(query, conn); // Buat SqlCommand dengan query dan koneksi
+
+                int jumlah = (int)cmd.ExecuteScalar(); // Eksekusi query dan dapatkan hasil
+
+                txtHasil.Text = jumlah.ToString(); // Tampilkan hasil di TextBox
+
+                conn.Close(); // Tutup koneksi
+            }
+            catch (Exception ex) // Tangkap dan tampilkan pesan error jika terjadi kesalahan
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
     }
 }

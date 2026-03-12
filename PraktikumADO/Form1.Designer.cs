@@ -103,6 +103,7 @@
             this.btnHitungDsn.TabIndex = 6;
             this.btnHitungDsn.Text = "Hitung DSN";
             this.btnHitungDsn.UseVisualStyleBackColor = true;
+            this.btnHitungDsn.Click += new System.EventHandler(this.btnHitungDsn_Click);
             // 
             // btnUpdateMK
             // 
