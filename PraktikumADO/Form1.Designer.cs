@@ -70,6 +70,7 @@
             this.btnHitungMhs.TabIndex = 3;
             this.btnHitungMhs.Text = "Hitung MHS";
             this.btnHitungMhs.UseVisualStyleBackColor = true;
+            this.btnHitungMhs.Click += new System.EventHandler(this.btnHitungMhs_Click);
             // 
             // btnHitungMK
             // 
