@@ -50,6 +50,12 @@ namespace PraktikumADO
             {
                 Koneksi(); // Panggil method koneksi
                 conn.Open(); // Buka koneksi
+
+                string query = "SELECT COUNT(*) FROM Mahasiswa"; // Query untuk menghitung jumlah mahasiswa
+
+                cmd = new SqlCommand(query, conn); // Buat SqlCommand dengan query dan koneksi
+
+                int jumlah = (int)cmd.ExecuteScalar(); // Eksekusi query dan dapatkan hasil
             }
         }
     }
