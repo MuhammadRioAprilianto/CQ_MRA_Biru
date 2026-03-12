@@ -123,6 +123,7 @@
             this.btnInsertProdi.TabIndex = 8;
             this.btnInsertProdi.Text = "Insert PRD";
             this.btnInsertProdi.UseVisualStyleBackColor = true;
+            this.btnInsertProdi.Click += new System.EventHandler(this.btnInsertProdi_Click);
             // 
             // Form1
             // 

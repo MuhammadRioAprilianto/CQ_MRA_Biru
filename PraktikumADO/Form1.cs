@@ -158,5 +158,28 @@ namespace PraktikumADO
                 MessageBox.Show(ex.Message);
             }
         }
+
+        private void btnInsertProdi_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                Koneksi(); // panggil method koneksi
+                conn.Open(); // buka koneksi
+
+                string query = "INSERT INTO ProgramStudi VALUES ('MI01', 'Manajemen Informatika')"
+
+                cmd = new SqlCommand(query, conn); // Buat SqlCommand dengan query dan koneksi
+
+                int hasil = cmd.ExecuteNonQuery(); // Eksekusi query dan dapatkan jumlah data yang berhasil diinsert
+
+                MessageBox.Show("Jumlah baris terpengaruh : " + hasil); // Tampilkan pesan jumlah data yang berhasil diinsert
+
+                conn.Close(); // Tutup koneksi
+            }
+            catch (Exception ex) // Tangkap dan tampilkan pesan error jika terjadi kesalahan
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
     }
 }
