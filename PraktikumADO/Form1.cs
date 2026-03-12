@@ -89,5 +89,15 @@ namespace PraktikumADO
                 MessageBox.Show(ex.Message);
             }
         }
+
+        private void btnUpdate_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                Koneksi(); // panggil method koneksi
+                conn.Open(); // buka koneksi
+
+            }
+        }
     }
 }
