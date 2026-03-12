@@ -113,6 +113,7 @@
             this.btnUpdateMK.TabIndex = 7;
             this.btnUpdateMK.Text = "Update MK";
             this.btnUpdateMK.UseVisualStyleBackColor = true;
+            this.btnUpdateMK.Click += new System.EventHandler(this.btnUpdateMK_Click);
             // 
             // btnInsertProdi
             // 
