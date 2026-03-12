@@ -29,7 +29,11 @@ namespace PraktikumADO
         }
         private void btnConnect_Click(object sender, EventArgs e)
         {
-
+            try
+            {
+                Koneksi(); // Panggil method koneksi
+                conn.Open(); // Buka koneksi
+            }
         }
     }
 }
