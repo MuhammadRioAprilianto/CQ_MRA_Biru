@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtHasil = new System.Windows.Forms.TextBox();
             this.btnConnect = new System.Windows.Forms.Button();
             this.btnHitungMhs = new System.Windows.Forms.Button();
             this.btnHitungMK = new System.Windows.Forms.Button();
@@ -45,12 +45,12 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "label1";
             // 
-            // textBox1
+            // txtHasil
             // 
-            this.textBox1.Location = new System.Drawing.Point(280, 133);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(334, 26);
-            this.textBox1.TabIndex = 1;
+            this.txtHasil.Location = new System.Drawing.Point(280, 133);
+            this.txtHasil.Name = "txtHasil";
+            this.txtHasil.Size = new System.Drawing.Size(334, 26);
+            this.txtHasil.TabIndex = 1;
             // 
             // btnConnect
             // 
@@ -99,7 +99,7 @@
             this.Controls.Add(this.btnHitungMK);
             this.Controls.Add(this.btnHitungMhs);
             this.Controls.Add(this.btnConnect);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtHasil);
             this.Controls.Add(this.label1);
             this.Name = "Form1";
             this.Text = "Form1";
@@ -111,7 +111,7 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtHasil;
         private System.Windows.Forms.Button btnConnect;
         private System.Windows.Forms.Button btnHitungMhs;
         private System.Windows.Forms.Button btnHitungMK;
