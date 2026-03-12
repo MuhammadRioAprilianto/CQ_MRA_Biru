@@ -79,6 +79,10 @@ namespace PraktikumADO
                 cmd = new SqlCommand(query, conn); // Buat SqlCommand dengan query dan koneksi
 
                 int jumlah = (int)cmd.ExecuteScalar(); // Eksekusi query dan dapatkan hasil
+
+                txtHasil.Text = jumlah.ToString(); // Tampilkan hasil di TextBox
+
+                conn.Close(); // Tutup koneksi
             }
         }
     }
