@@ -166,7 +166,7 @@ namespace PraktikumADO
                 Koneksi(); // panggil method koneksi
                 conn.Open(); // buka koneksi
 
-                string query = "INSERT INTO ProgramStudi VALUES ('MI01', 'Manajemen Informatika')"
+                string query = "INSERT INTO ProgramStudi VALUES ('MI01', 'Manajemen Informatika')"; // Query untuk menambahkan data program studi baru dengan kode MI01 dan nama Manajemen Informatika
 
                 cmd = new SqlCommand(query, conn); // Buat SqlCommand dengan query dan koneksi
 
