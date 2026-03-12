@@ -97,6 +97,12 @@ namespace PraktikumADO
                 Koneksi(); // panggil method koneksi
                 conn.Open(); // buka koneksi
 
+                string query = "UPDATE Mahasiswa SET Alamat = 'Yogyakarta' WHERE NIM = '23110100001'"; // Query untuk mengupdate alamat mahasiswa dengan NIM 23110100001
+
+                cmd = new SqlCommand(query, conn); // Buat SqlCommand dengan query dan koneksi
+
+                int hasil = cmd.ExecuteNonQuery(); // Eksekusi query dan dapatkan jumlah baris yang terpengaruh
+
             }
         }
     }
