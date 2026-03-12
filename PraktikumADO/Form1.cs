@@ -103,6 +103,9 @@ namespace PraktikumADO
 
                 int hasil = cmd.ExecuteNonQuery(); // Eksekusi query dan dapatkan jumlah baris yang terpengaruh
 
+                MessageBox.Show("Jumlah baris terpengaruh : " + hasil); // Tampilkan pesan jumlah data yang berhasil diupdate
+
+                conn.Close(); // Tutup koneksi
             }
         }
     }
