@@ -74,7 +74,11 @@ namespace PraktikumADO
                 Koneksi(); // Panggil method koneksi
                 conn.Open(); // Buka koneksi
 
+                string query = "SELECT COUNT(*) FROM MataKuliah"; // Query untuk menghitung jumlah mata kuliah
 
+                cmd = new SqlCommand(query, conn); // Buat SqlCommand dengan query dan koneksi
+
+                int jumlah = (int)cmd.ExecuteScalar(); // Eksekusi query dan dapatkan hasil
             }
         }
     }
