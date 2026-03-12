@@ -33,6 +33,8 @@ namespace PraktikumADO
             {
                 Koneksi(); // Panggil method koneksi
                 conn.Open(); // Buka koneksi
+
+                MessageBox.Show("Koneksi ke Database Berhasil!");
             }
         }
     }
